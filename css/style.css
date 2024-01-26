@@ -1,3 +1,61 @@
 * {
-    font-family: 'TT Norms Pro', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #dddddd;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar .main-menu ul {
+  display: flex;
+}
+.navbar ul li a {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  display: block;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ca992e;
+}
+.logo img {
+  max-width: 270px;
+  display: block;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navbar {
+  background-color: #fff;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
