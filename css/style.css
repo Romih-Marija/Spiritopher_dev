@@ -50,6 +50,7 @@ img {
 .logo-mobile img {
   display: block;
   padding: 10px;
+  padding-top: 15px;
   max-width: 250px;
   margin: 10px 20px;
 }
