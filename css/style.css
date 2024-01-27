@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --gold-color: #ca992e;
+}
 body {
   font-family: "TT Norms Pro", sans-serif;
   font-size: 16px;
@@ -34,7 +37,7 @@ img {
   transition: 0.3s;
 }
 .navbar ul li a:hover {
-  color: #ca992e;
+  color: var(--gold-color);
 }
 .logo img {
   max-width: 290px;
@@ -43,6 +46,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
+}
+.logo-mobile img {
+  display: block;
+  padding: 10px;
+  max-width: 250px;
+  margin: 10px 20px;
 }
 
 /* Utility Classes */
@@ -58,4 +67,28 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.hamburger-button {
+  display: none;
+}
+
+/* Media-query */
+@media (max-width: 890px) {
+  .navbar .main-menu {
+    display: none;
+  }
+  .navbar .logo {
+    display: none;
+  }
+  .hamburger-button {
+    display: block;
+  }
+  .navbar .container {
+    justify-content: center;
+  }
+}
+@media (min-width: 890px) {
+  .navbar .logo-mobile {
+    display: none;
+  }
 }
