@@ -133,6 +133,8 @@ img {
     width: 200px;
   }
   .logo-mobile {
+    padding: 7px;
+    padding-top: 10px;
     padding-bottom: 0px;
   }
   .hamburger-line {
