@@ -1,7 +1,19 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 :root {
   --gold-color: #ca992e;
@@ -10,7 +22,7 @@ body {
   font-family: "TT Norms Pro", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #dddddd;
+  background: #f1f1f1;
 }
 a {
   text-decoration: none;
@@ -121,6 +133,90 @@ img {
   font-size: 20px;
   transition: 0.3s;
 }
+.kontakt-podatki {
+  display: block;
+  padding: 20px;
+}
+.kontakt p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.kontakt .kontakt-sporocilo p {
+  margin: 15px 0;
+}
+
+.kontakt-sporocilo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 60%;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.kontakt .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.kontakt-sporocilo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+form .p-textarea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.p-textarea {
+  display: flex;
+  height: 100%;
+}
+form .p-textarea label {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.poslji {
+  padding: 0 35px;
+  background-color: #ca992e8d;
+  border: none;
+  border-radius: 25%/50%;
+}
+.poslji p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.kontakt-podatki-mobile {
+  display: block;
+  margin-top: 20px;
+}
+
 /* Media-query */
 @media (max-width: 400px) {
   .mobile-menu ul li a {
@@ -152,6 +248,7 @@ img {
     margin-top: 30px;
   }
 }
+
 @media (max-width: 900px) {
   .navbar .main-menu {
     display: none;
@@ -159,7 +256,37 @@ img {
   .navbar .logo {
     display: none;
   }
+  .kontakt .container {
+    flex-direction: column;
+  }
+  .kontakt-sporocilo {
+    width: 100%;
+    max-width: 570px;
+    padding: 20px;
+  }
+  form .p-textarea label {
+    height: 200px;
+  }
+  form {
+    height: auto;
+  }
+  .kontakt-sporocilo p {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .kontakt-sporocilo h3 {
+    font-size: 17px;
+  }
+  .poslji {
+    padding: 0 25px;
+    margin-bottom: 10px;
+  }
+
+  .kontakt-podatki {
+    display: none;
+  }
 }
+
 @media (min-width: 900px) {
   .navbar .logo-mobile {
     display: none;
@@ -171,6 +298,12 @@ img {
     display: none;
   }
   .shopping_bag {
+    display: none;
+  }
+  .kontakt-podatki {
+    display: block;
+  }
+  .kontakt-podatki-mobile {
     display: none;
   }
 }
