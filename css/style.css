@@ -291,6 +291,9 @@ form .p-textarea label {
 }
 
 @media (max-width: 900px) {
+  body .razlaga {
+    font-size: 15px;
+  }
   .ornament {
     margin-top: 5vh;
     margin-bottom: 5vh;
