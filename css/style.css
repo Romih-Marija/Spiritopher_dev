@@ -22,19 +22,22 @@ select:-webkit-autofill:focus {
   --gold-color: #ca992e;
 }
 .back-link {
-  color: var(--gold-color);
+  font-weight: 600;
+  color: #bd8f2c;
 }
 .card {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 75%;
   max-width: 364px;
   padding: 24px;
   background: white;
-  color: rgb(14, 30, 37);
   border-radius: 8px;
-  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
 }
 body {
   font-family: "TT Norms Pro", sans-serif;
