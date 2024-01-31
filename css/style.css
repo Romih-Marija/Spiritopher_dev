@@ -36,8 +36,8 @@ select:-webkit-autofill:focus {
   align-items: center;
 }
 .ornament {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 80px;
+  margin-bottom: 50px;
   max-width: 80%;
   max-height: 120px;
 }
@@ -300,8 +300,8 @@ form .p-textarea label {
 }
 @media (max-width: 900px) {
   .ornament {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 40px;
+    margin-bottom: 35px;
   }
   .razlaga {
     margin-top: 5vh;
