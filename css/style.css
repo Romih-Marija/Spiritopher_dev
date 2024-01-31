@@ -21,6 +21,12 @@ select:-webkit-autofill:focus {
 :root {
   --gold-color: #ca992e;
 }
+.izdelava {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .back-link {
   font-weight: 600;
   color: #bd8f2c;
