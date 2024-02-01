@@ -363,3 +363,8 @@ form .p-textarea label {
     display: none;
   }
 }
+@media (max-height: 670px) {
+  .kontakt-sporocilo {
+    padding: 20px;
+  }
+}
